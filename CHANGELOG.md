@@ -1,3 +1,26 @@
+## [1.1.1] - 2020-03-27
+
+### Fixed
+* Fixed macOS cache on 10.15 when App Identifier Prefix is different from TeamId
+* Remove SHA-1 dependency from production library
+* Fixed SSO extension + MSIT MFA
+* Fixed SSO extension swipe down cancellation case
+* Handle http headers coming from iOS broker when it is either a NSDictionary or NSString
+* Updated readme to include information about Microsoft Enterprise SSO plug-in for Apple devices and shared device scenarios (#881)
+
+## [1.1.0] - 2020-03-20
+
+### Added
+- iOS 13 SSO Extension support
+- Support ASWebAuthenticationSession on macOS 10.15
+- Track account sign-in and sign-out state
+- Support signOut from device if device is configured as shared through MDM
+
+## [1.0.7] - 2020-01-29
+### Fixed
+- Keyed unarchiver deserialization fix for iOS 11.2
+- [Broker patch] Fixed account lookups and validation with the same email (#827)
+
 ## [1.0.6] - 2020-01-03
 ### Fixed
 - Set mobile content type for the WKWebView configuration (#810)
@@ -34,6 +57,14 @@
 - Block swipe to dismiss for auth controller
 - Remove arm64e architecture
 - Pass custom keychain group for broker requests
+
+## [1.0.0-hotfix2] - 2020-01-27
+### Fixed
+- [Broker patch] Keyed unarchiver deserialization fix for iOS 11.2
+
+## [1.0.0-hotfix1] - 2020-01-21
+### Fixed
+- [Broker patch] Fixed account lookups and validation with the same email (#827)
 
 ## [1.0.0] - 2019-09-26
 ### Fixed
